@@ -14,11 +14,5 @@ class Invokable {
 fun invokeTwice(invokable: Invokable) = invokable()()()
 
 fun main() {
-//    println(invokeTwice(Invokable()).numberOfInvocations)
-
-    val list = mutableListOf("hello", "1.jpg", "2.png")
-//    list.filter { it.contains(".jpg") }.forEach { println(it) }
-    list.filter { it.contains("jpg") }.toMutableList()
-    list.removeIf { it.contains("png") }
-    println(list.javaClass)
+   println(invokeTwice(Invokable()).numberOfInvocations)
 }
